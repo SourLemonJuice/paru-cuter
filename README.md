@@ -81,7 +81,7 @@ exchange.sh exchange-to-file
 ### 脚本会干什么
 
 调用paru生成`.mo`二进制文件的脚本(的复制品)，源`paru:/script/mkmo`\
-这回在 储存库根目录 下生成`locale`文件夹，这里面包含了需要被放进 系统目录 的文件
+这会在 储存库根目录 下生成`locale`文件夹，这里面包含了需要被放进 系统目录 的翻译文件
 
 但在那之前，脚本会把`/usr/share/locale`下的所有 `paru.mp` 复制到储存库的`/backup`作为备份，不然的话你也可以重新安装`paru`来恢复啦
 
@@ -91,7 +91,7 @@ exchange.sh exchange-to-file
 
 刚才说到了，安装前会备份所有paru的本地化文件，脚本也能快速的用他们恢复翻译文件
 
-运行 `install.sh restore`
+以`root`权限运行 `install.sh restore` 即可恢复(如果翻译正常了就不要再运行这个了)
 
 ## 碎碎念
 
