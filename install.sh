@@ -14,7 +14,7 @@ restore)
 ;;
 *)
     # 生成 .mo 二进制文件
-    ./script/mkmo ./locale/
+    ./script/mkmo.sh ./locale/
     # 备份所有语言的原始 paru.mo
     find /usr/share/locale -type f -name 'paru.mo' -exec cp --parents {} ./backup \;
     # 复制新文件到系统目录
