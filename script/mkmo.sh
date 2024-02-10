@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# opt: mkmo <dir>
 set -e
 
 if [ -z "$1" ]; then
