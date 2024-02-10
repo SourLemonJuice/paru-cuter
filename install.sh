@@ -1,5 +1,6 @@
 #!/bin/bash
 # 有任何报错就退出
+# TODO: use PKGBUILD please
 set -e
 
 case $1 in
