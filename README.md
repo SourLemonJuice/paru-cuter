@@ -6,8 +6,9 @@
 
 ## 脚本作用
 
-目前所有文本的 "可爱化" 都是由 chatgpt3.5 完成，后续可能会针对某些字符串单独修改，或者在整体风格上用另一种提示词重构\
-为了处理这么多文本，我写了几个脚本用来处理和替换字符 (/script):
+所有文本的 "可爱化" 最开始由 chatgpt3.5 完成，后续对大部分字符串进行了修改，虽然我写的也不是很可爱就是了
+
+不过项目的重点是：为了处理这么多文本，我写了几个脚本用来处理和替换字符 (/script):
 
 - string-process.sh:
   - 删除空行
@@ -102,7 +103,7 @@ exchange.sh exchange-to-file
 ## 碎碎念
 
 - 为什么不 完全fork一个paru呢\
-因为`paru储存库`不是`paru软件包`，还要考虑`PKGBUILD`文件的问题，懒得折腾了
+因为`paru储存库`不是`paru软件包`，还要考虑`PKGBUILD`文件的问题，懒得折腾了。但用 PKGBUILD 实现大概会更好些吧
 - 这可爱吗\
 重在学习，可不可爱什么的还是得看提示词嘛，我还是写不出来灵魂，格式对了就行，咕咕
 - 哈，你改我pacman管得东西，小心下次更新就给你改过去嗷(凶)\
@@ -114,4 +115,5 @@ exchange.sh exchange-to-file
 
 ## 许可证
 
-这个储存库虽然和`paru`没什么关系，但翻译文件仍然是`paru`的一部分，所以顺便把整个储存库都加上`GNU v3`的协议了
+`po/` 与 `po-s/` 以及 `script/mkmo.sh` 中的内容受 paru 本身的许可证影响，在 [GNU General Public License v3.0](LICENSE-of-po) 下发布。\
+其余在 `/`下，但并不包括 `script/mkmo.sh` 的文件在 [MIT License](LICENSE) 下发布。
